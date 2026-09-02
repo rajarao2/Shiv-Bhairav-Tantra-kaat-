@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shiv Bhairav Tantra Kaat — आध्यात्मिक मार्गदर्शन, पारंपरिक साधना, कवच एवं मंत्र-ज्ञान।">
+<meta name="theme-color" content="#160b08">
+<title>Shiv Bhairav Tantra Kaat | आध्यात्मिक मार्गदर्शन</title>
+<style>
+:root{
+  --bg:#0d0807; --card:#1a100d; --card2:#211411; --gold:#e5b85c;
+  --gold2:#ffd98a; --cream:#fff4dc; --muted:#cdbda6; --red:#8e211b;
+  --line:rgba(229,184,92,.24);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% -10%,#4b1b10 0,#0d0807 42%);color:var(--cream);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,8,7,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0}
+.logo{font-weight:800;color:var(--gold2);font-size:1.05rem}
+.menu{display:flex;gap:14px;flex-wrap:wrap;font-size:.9rem;color:#f5dfbb}
+.menu a:hover{color:var(--gold2)}
+.hero{padding:48px 0 34px;text-align:center}
+.om{font-size:2.6rem;color:var(--gold);margin-bottom:4px}
+h1{font-size:clamp(2rem,6vw,4.2rem);line-height:1.1;margin:0;color:#fff1ce}
+.tag{font-size:clamp(1rem,2.5vw,1.3rem);color:var(--gold2);margin:14px auto;max-width:760px}
+.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0}
+.badge{border:1px solid var(--line);padding:7px 12px;border-radius:999px;background:#170d0a;color:#f2d6a4}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:800;border:1px solid var(--line);background:linear-gradient(135deg,#7d1d16,#4b120f);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn.gold{background:linear-gradient(135deg,#d79d35,#8f5a11);color:#1a0e05}
+section{padding:38px 0}
+.section-title{text-align:center;margin-bottom:22px}
+.section-title h2{margin:0;color:var(--gold2);font-size:clamp(1.55rem,4vw,2.35rem)}
+.section-title p{color:var(--muted);margin:6px auto;max-width:760px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.about img{width:100%;height:440px;object-fit:cover;border-radius:20px;border:1px solid var(--line);box-shadow:0 14px 35px #0008}
+.card{background:linear-gradient(145deg,rgba(37,21,16,.96),rgba(18,10,8,.96));border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 12px 30px #0005}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kavach{padding:18px}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#5e1712;color:var(--gold2);font-weight:900;margin-bottom:10px}
+.kavach h3{font-size:1.08rem;margin:3px 0 6px;color:#ffe8bd}
+.kavach p{font-size:.9rem;color:var(--muted);margin:0}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid var(--line);cursor:pointer}
+.certificate{max-width:780px;margin:auto;text-align:center}
+.certificate img{width:100%;border-radius:16px;border:1px solid var(--line);box-shadow:0 14px 35px #0008}
+.reg{margin-top:14px;padding:15px;border:1px solid var(--line);border-radius:14px;background:#170d0a;color:#f5dcae}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-list{display:grid;gap:10px}
+.contact-item{padding:14px;border:1px solid var(--line);border-radius:12px;background:#170d0a}
+.contact-item b{color:var(--gold2)}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.social{display:flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:#1b100c}
+.social svg{width:22px;height:22px;fill:currentColor}
+.notice{font-size:.86rem;color:#cbb99f}
+footer{padding:30px 0 55px;text-align:center;border-top:1px solid var(--line);color:#bba98f}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#20b95a;color:white;box-shadow:0 8px 28px #0009;font-weight:900;font-size:1.55rem}
+@media(max-width:800px){
+  .menu{display:none}.about,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}
+  .about img{height:330px}
+}
+@media(max-width:520px){
+  .grid{grid-template-columns:1fr}.gallery img{height:190px}.hero{padding-top:34px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container navin">
+    <div class="logo">🔱 Shiv Bhairav Tantra Kaat</div>
+    <div class="menu">
+      <a href="#home">होम</a><a href="#about">परिचय</a><a href="#kavach">कवच</a><a href="#gallery">फोटो</a><a href="#certificate">प्रमाणपत्र</a><a href="#contact">संपर्क</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container">
+    <div class="om">ॐ</div>
+    <h1>Shiv Bhairav Tantra Kaat</h1>
+    <div class="tag">आध्यात्मिक मार्गदर्शन • पारंपरिक साधना • तंत्र-मंत्र एवं कवच ज्ञान</div>
+    <div class="badges">
+      <span class="badge">🔱 शिव भैरव साधना</span>
+      <span class="badge">🕉️ मंत्र-जप ज्ञान</span>
+      <span class="badge">🛡️ कवच एवं पारंपरिक विधियाँ</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn gold" href="https://wa.me/919101926410?text=Namaste%2C%20mujhe%20Shiv%20Bhairav%20Tantra%20Kaat%20se%20paramarsh%20chahiye.">📱 WhatsApp पर संपर्क</a>
+      <a class="btn" href="tel:+919101926410">☎️ अभी कॉल करें</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title"><h2>हमारे बारे में</h2><p>परंपरागत आध्यात्मिक ज्ञान और साधना से जुड़ी जानकारी को सरल रूप में प्रस्तुत करने का प्रयास।</p></div>
+    <div class="about">
+      <img src="assets/photo-06.jpg" alt="Shiv Bhairav Tantra Kaat">
+      <div class="card">
+        <h2 style="color:var(--gold2);margin-top:0">आध्यात्मिक मार्गदर्शन</h2>
+        <p>Shiv Bhairav Tantra Kaat में तंत्र-मंत्र, साधना, मंत्र-जप, कवच और आध्यात्मिक विषयों से संबंधित पारंपरिक जानकारी साझा की जाती है।</p>
+        <p>किसी भी साधना को श्रद्धा, संयम और जिम्मेदारी के साथ करना चाहिए। यहां दी गई जानकारी को आध्यात्मिक/पारंपरिक मार्गदर्शन के रूप में देखें; परिणाम व्यक्ति और परिस्थिति के अनुसार अलग हो सकते हैं।</p>
+        <p class="notice">नोट: किसी भी कानूनी, चिकित्सकीय या वित्तीय समस्या के लिए संबंधित योग्य पेशेवर की सलाह भी लें।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kavach">
+  <div class="container">
+    <div class="section-title"><h2>कवच एवं सेवाओं की सूची</h2><p>सभी विषय क्रमांक के साथ।</p></div>
+    <div class="grid">
+      <div class="card kavach"><span class="num">1</span><h3>रुद्र कवच</h3><p>रुद्र उपासना एवं पारंपरिक रक्षा-साधना से संबंधित जानकारी।</p></div>
+      <div class="card kavach"><span class="num">2</span><h3>मोहिनी कवच</h3><p>पारंपरिक मान्यताओं में वर्णित मोहिनी साधना से संबंधित ज्ञान।</p></div>
+      <div class="card kavach"><span class="num">3</span><h3>वशीकरण कवच</h3><p>परंपरागत मंत्र-साधना के संदर्भ में जानकारी।</p></div>
+      <div class="card kavach"><span class="num">4</span><h3>राजमोहिनी कवच</h3><p>पारंपरिक साधना और आध्यात्मिक अनुशासन से जुड़ा विषय।</p></div>
+      <div class="card kavach"><span class="num">5</span><h3>मातंगी कवच</h3><p>मातंगी उपासना से संबंधित पारंपरिक ज्ञान।</p></div>
+      <div class="card kavach"><span class="num">6</span><h3>तारा कवच</h3><p>तारा साधना और मंत्र-जप की पारंपरिक जानकारी।</p></div>
+      <div class="card kavach"><span class="num">7</span><h3>धूमावती कवच</h3><p>धूमावती उपासना से संबंधित पारंपरिक विषय।</p></div>
+      <div class="card kavach"><span class="num">8</span><h3>बगलामुखी कवच</h3><p>बगलामुखी साधना के पारंपरिक संदर्भ।</p></div>
+      <div class="card kavach"><span class="num">9</span><h3>नवग्रह कवच</h3><p>नवग्रह उपासना एवं ज्योतिषीय परंपराओं से जुड़ी जानकारी।</p></div>
+      <div class="card kavach"><span class="num">10</span><h3>धंधा कवच</h3><p>व्यवसाय और समृद्धि से जुड़ी पारंपरिक मान्यताओं का परिचय।</p></div>
+      <div class="card kavach"><span class="num">11</span><h3>प्रजापति कवच</h3><p>पारंपरिक आध्यात्मिक साधना से संबंधित विषय।</p></div>
+      <div class="card kavach"><span class="num">12</span><h3>बंधन कवच</h3><p>बंधन संबंधी लोक-परंपराओं और आध्यात्मिक दृष्टिकोण की जानकारी।</p></div>
+      <div class="card kavach"><span class="num">13</span><h3>राशि कवच</h3><p>राशि एवं ज्योतिषीय परंपरा से संबंधित आध्यात्मिक जानकारी।</p></div>
+      <div class="card kavach"><span class="num">14</span><h3>सूर्य कवच</h3><p>सूर्य उपासना, जप और पारंपरिक विधियों का परिचय।</p></div>
+      <div class="card kavach"><span class="num">15</span><h3>रक्षा कवच</h3><p>आध्यात्मिक सुरक्षा और पारंपरिक रक्षा-उपासना से जुड़ी जानकारी।</p></div>
+      <div class="card kavach"><span class="num">16</span><h3>सर्व बाधा निवारण कवच</h3><p>पारंपरिक मान्यताओं में बाधा-निवारण से संबंधित विषय।</p></div>
+      <div class="card kavach"><span class="num">17</span><h3>सर्व तंत्र-मंत्र काट</h3><p>तंत्र-मंत्र संबंधी लोक-मान्यताओं और आध्यात्मिक दृष्टिकोण का परिचय।</p></div>
+      <div class="card kavach"><span class="num">18</span><h3>सुरक्षा कवच</h3><p>सुरक्षा और आध्यात्मिक अनुशासन से जुड़ा पारंपरिक विषय।</p></div>
+      <div class="card kavach"><span class="num">19</span><h3>नज़र दोष निवारण</h3><p>नज़र दोष से जुड़ी पारंपरिक मान्यताओं और उपायों की जानकारी।</p></div>
+      <div class="card kavach"><span class="num">20</span><h3>घर बंधन</h3><p>घर से संबंधित पारंपरिक आध्यात्मिक अवधारणाओं का परिचय।</p></div>
+      <div class="card kavach"><span class="num">21</span><h3>दुकान बंधन</h3><p>व्यापार-स्थल से जुड़ी पारंपरिक मान्यताओं की जानकारी।</p></div>
+      <div class="card kavach"><span class="num">22</span><h3>कोर्ट-कचहरी मार्गदर्शन</h3><p>कठिन परिस्थितियों में आध्यात्मिक सहारा और सामान्य मार्गदर्शन।</p></div>
+      <div class="card kavach"><span class="num">23</span><h3>लव मैरिज मार्गदर्शन</h3><p>विवाह और संबंधों से जुड़े आध्यात्मिक/परामर्शात्मक विषय।</p></div>
+      <div class="card kavach"><span class="num">24</span><h3>सर्व यंत्र ज्ञान</h3><p>यंत्रों के पारंपरिक आध्यात्मिक उपयोग का परिचय।</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="section-title"><h2>फोटो गैलरी</h2><p>साधना स्थल और उपलब्ध फोटो।</p></div>
+    <div class="gallery">
+      <img src="assets/photo-01.jpg" alt="साधना स्थल फोटो">
+      <img src="assets/photo-02.jpg" alt="साधना स्थल फोटो">
+      <img src="assets/photo-03.jpg" alt="साधना स्थल फोटो">
+      <img src="assets/photo-04.jpg" alt="पूजा स्थल फोटो">
+      <img src="assets/photo-05.jpg" alt="आध्यात्मिक स्थल फोटो">
+      <img src="assets/photo-06.jpg" alt="साधना स्थल फोटो">
+      <img src="assets/photo-07.jpg" alt="आध्यात्मिक स्थल फोटो">
+    </div>
+  </div>
+</section>
+
+<section id="certificate">
+  <div class="container">
+    <div class="section-title"><h2>प्रमाणपत्र</h2><p>आपके द्वारा उपलब्ध कराया गया प्रमाणपत्र।</p></div>
+    <div class="certificate card">
+      <img src="assets/certificate.jpg" alt="Certificate">
+      <div class="reg"><b>RSWS Regd. Under Society Act - XXVI/1961, Govt. of W.B.</b><br>Regd. No.: <b>IV - 130100052</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title"><h2>परामर्श के लिए संपर्क करें</h2><p>भारत (INDIA) — फोन और WhatsApp द्वारा संपर्क।</p></div>
+    <div class="contact">
+      <div class="card">
+        <div class="contact-list">
+          <div class="contact-item">📞 <b>Mobile 1:</b> <a href="tel:+919101926410">+91 9101926410</a></div>
+          <div class="contact-item">📞 <b>Mobile 2:</b> <a href="tel:+918132871086">+91 8132871086</a></div>
+          <div class="contact-item">🇮🇳 <b>देश:</b> India</div>
+          <div class="contact-item">🧾 <b>Registration:</b> IV - 130100052</div>
+        </div>
+        <div class="socials">
+          <a class="social" href="https://wa.me/919101926410" aria-label="WhatsApp">💬 WhatsApp</a>
+          <a class="social" href="https://www.facebook.com/" aria-label="Facebook">f&nbsp; Facebook</a>
+          <a class="social" href="https://www.instagram.com/" aria-label="Instagram">◎&nbsp; Instagram</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--gold2)">WhatsApp पर संदेश भेजें</h3>
+        <p>नाम, अपनी समस्या/प्रश्न और पसंदीदा समय लिखकर संदेश भेजें।</p>
+        <a class="btn gold" style="width:100%" href="https://wa.me/919101926410?text=Namaste%2C%20Shiv%20Bhairav%20Tantra%20Kaat%20se%20paramarsh%20ke%20liye%20sampark%20karna%20hai.">📲 WhatsApp चैट शुरू करें</a>
+        <p class="notice">Facebook और Instagram के आपके व्यक्तिगत प्रोफाइल लिंक मिलने पर इन्हें सीधे आपके प्रोफाइल से जोड़ा जा सकता है।</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div style="font-size:1.2rem;color:var(--gold2);font-weight:800">🔱 Shiv Bhairav Tantra Kaat</div>
+    <div>© 2026 — आध्यात्मिक मार्गदर्शन एवं पारंपरिक साधना ज्ञान</div>
+    <div class="notice">यह वेबसाइट आध्यात्मिक/पारंपरिक जानकारी के लिए है। किसी परिणाम की गारंटी का दावा नहीं किया गया है।</div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919101926410" aria-label="WhatsApp">☎</a>
+</body>
+</html>
