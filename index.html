@@ -59,13 +59,15 @@ section{padding:38px 0}
 footer{padding:30px 0 55px;text-align:center;border-top:1px solid var(--line);color:#bba98f}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#20b95a;color:white;box-shadow:0 8px 28px #0009;font-weight:900;font-size:1.55rem}
 .hero-photo{
-  width:180px;
-  height:180px;
+  width:100%;
+  height:auto;
+  max-height:420px;
   object-fit:cover;
-  border-radius:50%;
+  border-radius:16px;
   border:3px solid var(--gold2);
-  margin:0 auto 18px;
+  margin:0 auto 24px;
   display:block;
+}
 }@media(max-width:800px){
   .menu{display:none}.about,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}
   .about img{height:330px}
